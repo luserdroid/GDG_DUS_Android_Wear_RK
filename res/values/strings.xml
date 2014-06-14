@@ -5,4 +5,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <!-- emergency -->
+    <string name="notification_emergency">Emergency</string>
+    <string name="notification_emergency_police">Call police</string>
+    <string name="notification_emergency_ambulance">Call ambulance</string>
+    
+    <!-- contact -->
+    <string name="notification_contact">Contact</string>
+    <string name="notification_contact_caretaker">Call caretaker</string>
+    <string name="notification_contact_family">Call family</string>
+    
+    <!-- service -->
+    <string name="notification_service">Service</string>
+    <string name="notification_service_sanitary">Sanitary facility</string>
 </resources>

@@ -2,8 +2,10 @@ package com.luser.android.wear;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -14,7 +16,7 @@ import android.view.ViewGroup;
 import com.luser.android.wear.notification.NotificationManagerHelper;
 
 public class MainActivity extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,19 +26,9 @@ public class MainActivity extends Activity {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-
-		String notruf = "Notruf";
-		String service = "Service";
-		String contacts = "Kontakte";
 		
-		NotificationManagerHelper notificationHelper = new NotificationManagerHelper(
-				MainActivity.class, this);
-		notificationHelper.createNotification(R.drawable.ic_launcher, notruf,
-				"Kontakte benachrichtigen ","test", 1);
-		notificationHelper.createNotification(R.drawable.ic_launcher, service,
-				"Service benachrichtigen ","test", 2);
-		notificationHelper.createNotification(R.drawable.ic_launcher, contacts,
-				"Notruf benachrichtigen ","test", 3);
+		CareMaker careMaker = new CareMaker(this, MainActivity.class);
+		careMaker.showCareNotifications();
 	}
 
 	@Override
