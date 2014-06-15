@@ -9,6 +9,8 @@
     <string name="notification_emergency">Emergency</string>
     <string name="notification_emergency_police">Call police</string>
     <string name="notification_emergency_ambulance">Call ambulance</string>
+    <string name="notification_emergency_description_title">Emergency instructions</string>
+    <string name="notification_emergency_description">Every minute counts ! A call is done directly to police or ambulance.</string>
     
     <!-- contact -->
     <string name="notification_contact">Contact</string>
