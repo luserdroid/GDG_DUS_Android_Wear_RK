@@ -19,5 +19,5 @@
     
     <!-- service -->
     <string name="notification_service">Service</string>
-    <string name="notification_service_sanitary">Sanitary facility</string>
+    <string name="notification_service_sanitary">Sanitary management</string>
 </resources>
